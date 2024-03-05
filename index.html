@@ -3,7 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Background</title>
+    <title>Sefr Innovation</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Sefr Innovation" />
+    <meta name="description" content="Powered By 4 From 0" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sefrinnovation.com/" />
+    <meta property="og:title" content="Sefr Innovation" />
+    <meta property="og:description" content="Powered By 4 From 0" />
+    <!-- Open Graph Image -->
+    <meta property="og:image" content="/assets/og-image-1200x630.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sefrinnovation.com/" />
+    <meta property="twitter:title" content="Sefr Innovation" />
+    <meta property="twitter:description" content="Powered By 4 From 0" />
+    <meta property="twitter:image" content="https://sefrinnovation.com/assets/og-image-1200x630.png" />
+
+    <!-- Additional -->
+    <link rel="canonical" href="https://sefrinnovation.com/" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Sefr Innovation" />
+    <meta name="keywords" content="Innovation, Sefr, Art, Future" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="256x256" href="/assets/android-chrome-256x256.png" />
+
+    <!-- Apple Touch Icon (for Apple devices) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+
     <style>
       body,
       html {
@@ -13,25 +50,37 @@
         background-color: white;
       }
       video {
-        position: fixed; /* Use fixed or absolute positioning */
+        position: fixed;
         right: 0;
         bottom: 0;
-        min-width: 100%; /* These four lines ensure the video will cover the full screen on any device */
+        min-width: 100%;
         min-height: 100%;
         width: auto;
         height: auto;
-        z-index: -100; /* Ensures the video stays in the background */
         background-size: cover;
         overflow: hidden;
-        pointer-events: none; /* Makes the video untouchable */
+        pointer-events: none;
       }
     </style>
   </head>
   <body>
-    <h3>Sefr</h3>
-    <!-- <video playsinline loop muted autoplay>
-      <source src="path-to-your-video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video> -->
+    <video playsinline loop muted autoplay>
+      <source src="/assets/sefr.mp4" type="video/mp4" />
+    </video>
+    <div
+      style="
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+      "
+    >
+      <h1>Sefr Innovation</h1>
+      <h2>Powered By 4 From 0</h2>
+    </div>
   </body>
 </html>
