@@ -13,6 +13,7 @@
     <meta property="og:url" content="https://sefrinnovation.com/" />
     <meta property="og:title" content="Sefr Innovation" />
     <meta property="og:description" content="Powered By 4 From 0" />
+
     <!-- Open Graph Image -->
     <meta property="og:image" content="/assets/og-image-1200x630.png" />
     <meta property="og:image:width" content="1200" />
@@ -32,6 +33,7 @@
     <meta name="author" content="Sefr Innovation" />
     <meta name="keywords" content="Innovation, Sefr, Art, Future" />
 
+    <!-- Icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
@@ -49,23 +51,30 @@
         height: 100%;
         background-color: white;
       }
-      video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
+      /* .video {
+        min-width: 500px;
+        min-height: 500px;
         width: auto;
         height: auto;
         object-fit: cover; 
         pointer-events: none; 
+      } */
+      .video-container{
+        display: flex;
+        width: 100%;
+        height:100%;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
   <body>
-    <video playsinline loop muted autoplay preload="auto">
-      <source src="/assets/sefr.mp4" type="video/mp4" aut/>
-    </video>
+    <div class="video-container">
+      
+
+      <video src="/assets/sefr.mp4"  playsinline loop muted autoplay preload="auto"/>
+       
+    </div>
     <div
       style="
         position:absolute; visibility:hidden; font-size:0;
