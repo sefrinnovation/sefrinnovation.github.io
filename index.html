@@ -47,23 +47,29 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
 
     <style>
-       body, html {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .video-container {
-    display: flex;
-    width: 20%; /* Adjust this value as needed */
-    height: 20%; /* Adjust this value as needed */
-    justify-content: center;
-    align-items: center;
-  }
+      body,
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Disable scroll */
+            -webkit-user-select: none; /* Disable text selection for Safari */
+            -moz-user-select: none; /* Disable text selection for Firefox */
+            -ms-user-select: none; /* Disable text selection for IE/Edge */
+            user-select: none; /* Disable text selection for Chrome, Opera, and others */
+        }
+        .video-container {
+            display: flex;
+            width: 20%;
+            height: 20%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
 
   .video-container img {
     width: 100%; /* Makes the image fill the container */
@@ -71,13 +77,15 @@
   }
     </style>
   </head>
-  <body>
+  <body oncontextmenu="return false;"> <!-- Disable right-click -->
     <div class="video-container">
-      <img src="/assets/sefr.gif" alt="Description of GIF content" loop />
+        <img src="/assets/sefr.gif" alt="Description of GIF content" />
     </div>
-    <div style="position: absolute; visibility: hidden; font-size: 0">
-      <h1>Sefr Innovation</h1>
-      <h2>Powered By 4 From 0</h2>
-    </div>
-  </body>
+    <script>
+        // Disable pinch-zoom on iOS and other mobile devices
+        document.addEventListener('touchmove', function(event) {
+            if (event.scale !== 1) { event.preventDefault(); }
+        }, { passive: false });
+    </script>
+</body>
 </html>
