@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sefr Innovation</title>
-    <!-- Primary Meta Tags -->
+
     <meta name="title" content="Sefr Innovation" />
     <meta name="description" content="Powered By 4 From 0" />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sefrinnovation.com/" />
     <meta property="og:title" content="Sefr Innovation" />
     <meta property="og:description" content="Powered By 4 From 0" />
 
-    <!-- Open Graph Image -->
     <meta property="og:image" content="/assets/og-image-1200x630.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://sefrinnovation.com/" />
     <meta property="twitter:title" content="Sefr Innovation" />
@@ -29,63 +26,65 @@
       content="https://sefrinnovation.com/assets/og-image-1200x630.png"
     />
 
-    <!-- Additional -->
     <link rel="canonical" href="https://sefrinnovation.com/" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Sefr Innovation" />
     <meta name="keywords" content="Innovation, Sefr, Art, Future" />
 
-    <!-- Icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="256x256" href="/assets/android-chrome-256x256.png" />
 
-    <!-- Apple Touch Icon (for Apple devices) -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
 
     <style>
       body,
-        html {
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden; /* Disable scroll */
-            -webkit-user-select: none; /* Disable text selection for Safari */
-            -moz-user-select: none; /* Disable text selection for Firefox */
-            -ms-user-select: none; /* Disable text selection for IE/Edge */
-            user-select: none; /* Disable text selection for Chrome, Opera, and others */
-        }
-        .video-container {
-            display: flex;
-            width: 20%;
-            height: 20%;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-        }
+      html {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .video-container {
+        display: flex;
+        width: 20%;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
 
-  .video-container img {
-    width: 100%; /* Makes the image fill the container */
-    height: auto; /* Maintains the aspect ratio of the image */
-  }
+      .video-container img {
+        width: 100%;
+        height: auto;
+      }
     </style>
   </head>
-  <body oncontextmenu="return false;"> <!-- Disable right-click -->
+  <body oncontextmenu="return false;">
     <div class="video-container">
-        <img src="/assets/sefr.gif" alt="Description of GIF content" />
+      <img src="/assets/sefr.gif" alt="Description of GIF content" />
     </div>
     <script>
-        // Disable pinch-zoom on iOS and other mobile devices
-        document.addEventListener('touchmove', function(event) {
-            if (event.scale !== 1) { event.preventDefault(); }
-        }, { passive: false });
+      document.addEventListener(
+        "touchmove",
+        function (event) {
+          if (event.scale !== 1) {
+            event.preventDefault();
+          }
+        },
+        { passive: false }
+      );
     </script>
-</body>
+  </body>
 </html>
